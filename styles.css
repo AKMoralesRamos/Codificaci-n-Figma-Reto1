@@ -1,0 +1,167 @@
+:root {
+  --font-primary: "Montserrat", sans-serif;
+  --font-secundary: "Montserrat Alternates", sans-serif;
+  --font-terciary: "Roboto", sans-serif;
+}
+
+html {
+  background-color: white;
+}
+
+body {
+  max-width: 2000px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-primary);
+}
+
+.main {
+  width: 70%;
+  height: 600px;
+  border-color: solid 20px black;
+  display: flex;
+  box-shadow: 2px 3px 16px 6px rgba(0, 0, 0, 0.27);
+}
+
+.container-left {
+  width: 60%;
+  height: 600px;
+  background-color: #fdf9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-white {
+  width: 70%;
+  height: 70%;
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 35px;
+  box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.22);
+}
+
+.container-right {
+  width: 40%;
+  height: 600px;
+  background: linear-gradient(
+    90deg,
+    rgba(180, 146, 253, 0.3) 0%,
+    rgba(173, 78, 245, 0.9543) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-dev {
+  width: 80%;
+  height: 80%;
+  background-image: url(./assets/dev.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.text-input,
+h3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 21%;
+}
+
+.input {
+  width: 75%;
+  height: 34px;
+  border: 1px solid black;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+.input::placeholder {
+  color: #6667b0;
+}
+
+.container-buttons {
+  width: 78%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  width: 43%;
+  height: 38px;
+  border-radius: 6px;
+  border: 1px solid black;
+  /*   display: flex;
+    align-items: center; */
+}
+
+#button-google {
+  background-image: url(./assets/googlee.png);
+  background-color: white;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#button-apple {
+  background-image: url(./assets/applee.png);
+  background-color: white;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.button-login {
+  width: 75%;
+  height: 34px;
+  border-radius: 6px;
+  padding-left: 10px;
+}
+
+#button-login {
+  width: 80%;
+  height: 38px;
+  border: none;
+  background-color: #6b43ff;
+  color: white;
+  font-family: var(--font-terciary);
+  font-size: medium;
+}
+
+button#button-login.button-login {
+  margin: none;
+}
+
+#text-purple {
+  color: #6b43ff;
+  font-weight: bold;
+  font-size: small;
+  display: flex;
+  justify-content: end;
+}
+
+.container-text-purple {
+  width: 80%;
+  display: flex;
+  justify-content: end !important;
+}
+
+fieldset {
+  width: 70%;
+  height: 15px;
+  text-align: center;
+  margin-top: 10px;
+  border-top: 1px solid #6667b0;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  font-weight: lighter;
+}
